@@ -66,7 +66,21 @@ namespace DrawLuckyWheel
             return rotatedBmp;
         }
 
-        
+        private void RotateImage(PictureBox pb, Image img, float angle)
+        {
+            if (img == null || pb.Image == null)
+                return;
+
+            Image oldImage = pb.Image;
+            pb.Image = RotateImage(img, angle);
+            if (oldImage != null)
+            {
+                oldImage.Dispose();
+            }
+        }
+
+
+
 
 
     }
