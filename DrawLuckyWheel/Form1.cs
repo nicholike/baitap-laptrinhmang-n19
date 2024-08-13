@@ -13,18 +13,18 @@ namespace DrawLuckyWheel
 {
     public partial class Form1 : Form
     {
-        bool wheelIsMoved;    
-        float wheelTimes;      
+        bool wheelIsMoved;
+        float wheelTimes;
         Timer wheelTimer;
         LuckyCirlce koloFortuny;
         public Form1()
         {
-            InitializeComponent();         
+            InitializeComponent();
             wheelTimer = new Timer();
             wheelTimer.Interval = 30; // speed 
             wheelTimer.Tick += wheelTimer_Tick;
             koloFortuny = new LuckyCirlce();
-           
+
         }
         public class LuckyCirlce
         {
@@ -38,33 +38,36 @@ namespace DrawLuckyWheel
             {
                 tempObrazek = new Bitmap(Properties.Resources.lucky_wheel);
                 obrazek = new Bitmap(Properties.Resources.lucky_wheel);
-                wartosciStanu = new int[] { 12, 11, 10 ,09, 08, 07, 06, 05, 04, 03, 02, 01};
+                wartosciStanu = new int[] { 12, 11, 10, 09, 08, 07, 06, 05, 04, 03, 02, 01 };
                 kat = 0.0f;
             }
 
         }
 
-      
-    }
-    public static Bitmap RotateImage(Image image, float angle)
-    {
-        return RotateImage(image, new PointF((float)image.Width / 2, (float)image.Height / 2), angle);
-    }
+        public static Bitmap RotateImage(Image image, float angle)
+        {
+            return RotateImage(image, new PointF((float)image.Width / 2, (float)image.Height / 2), angle);
+        }
 
-    public static Bitmap RotateImage(Image image, PointF offset, float angle)
-    {
-        if (image == null)
-            throw new ArgumentNullException("image");
+        public static Bitmap RotateImage(Image image, PointF offset, float angle)
+        {
+            if (image == null)
+                throw new ArgumentNullException("image");
 
 
-        Bitmap rotatedBmp = new Bitmap(image.Width, image.Height);
-        rotatedBmp.SetResolution(image.HorizontalResolution, image.VerticalResolution);
-        Graphics g = Graphics.FromImage(rotatedBmp);
-        g.TranslateTransform(offset.X, offset.Y);
-        g.RotateTransform(angle);
-        g.TranslateTransform(-offset.X, -offset.Y);
-        g.DrawImage(image, new PointF(0, 0));
+            Bitmap rotatedBmp = new Bitmap(image.Width, image.Height);
+            rotatedBmp.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+            Graphics g = Graphics.FromImage(rotatedBmp);
+            g.TranslateTransform(offset.X, offset.Y);
+            g.RotateTransform(angle);
+            g.TranslateTransform(-offset.X, -offset.Y);
+            g.DrawImage(image, new PointF(0, 0));
 
-        return rotatedBmp;
+            return rotatedBmp;
+        }
+
+        
+
+
     }
 }
