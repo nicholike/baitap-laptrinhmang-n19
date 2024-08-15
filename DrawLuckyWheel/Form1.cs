@@ -78,6 +78,32 @@ namespace DrawLuckyWheel
                 oldImage.Dispose();
             }
         }
+        private void wheelTimer_Tick(object sender, EventArgs e)
+        {
+
+            if (wheelIsMoved && wheelTimes > 0)
+            {
+                koloFortuny.kat += wheelTimes / 10;
+                koloFortuny.kat = koloFortuny.kat % 360;
+                RotateImage(pictureBox1, koloFortuny.obrazek, koloFortuny.kat);
+                wheelTimes--;
+            }
+
+            koloFortuny.stan = Convert.ToInt32(Math.Ceiling(koloFortuny.kat / 30));
+
+            if (koloFortuny.stan == 0)
+            {
+                koloFortuny.stan = 0;
+            }
+            else
+            {
+                koloFortuny.stan -= 1;
+            }
+
+            label1.Text = Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]);
+
+
+        }
 
 
 
