@@ -48,3 +48,59 @@ namespace DrawLuckyWheel
         {
             return RotateImage(image, new PointF((float)image.Width / 2, (float)image.Height / 2), angle);
         }
+
+        public static Bitmap RotateImage(Image image, PointF offset, float angle)
+        {
+            if (image == null)
+                throw new ArgumentNullException("image");
+
+
+            Bitmap rotatedBmp = new Bitmap(image.Width, image.Height);
+            rotatedBmp.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+            Graphics g = Graphics.FromImage(rotatedBmp);
+            g.TranslateTransform(offset.X, offset.Y);
+            g.RotateTransform(angle);
+            g.TranslateTransform(-offset.X, -offset.Y);
+            g.DrawImage(image, new PointF(0, 0));
+
+            return rotatedBmp;
+        }
+
+        private void RotateImage(PictureBox pb, Image img, float angle)
+        {
+            if (img == null || pb.Image == null)
+                return;
+
+            Image oldImage = pb.Image;
+            pb.Image = RotateImage(img, angle);
+            if (oldImage != null)
+            {
+                oldImage.Dispose();
+            }
+        }
+        private void wheelTimer_Tick(object sender, EventArgs e)
+        {
+
+            if (wheelIsMoved && wheelTimes > 0)
+            {
+                koloFortuny.kat += wheelTimes / 10;
+                koloFortuny.kat = koloFortuny.kat % 360;
+                RotateImage(pictureBox1, koloFortuny.obrazek, koloFortuny.kat);
+                wheelTimes--;
+            }
+
+            koloFortuny.stan = Convert.ToInt32(Math.Ceiling(koloFortuny.kat / 30));
+
+            if (koloFortuny.stan == 0)
+            {
+                koloFortuny.stan = 0;
+            }
+            else
+            {
+                koloFortuny.stan -= 1;
+            }
+
+            label1.Text = Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]);
+
+
+        }
