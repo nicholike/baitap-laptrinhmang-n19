@@ -29,3 +29,15 @@ C:\Users\flyin\Desktop\bài tập\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Deb
 C:\Users\flyin\Desktop\bài tập\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CoreCompileInputs.cache
 C:\Users\flyin\Desktop\bài tập\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.exe
 C:\Users\flyin\Desktop\bài tập\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.exe.config
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.exe
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.AssemblyReference.cache
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form1.resources
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Properties.Resources.resources
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.GenerateResource.cache
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CoreCompileInputs.cache
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.exe
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form2.resources
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form3.resources

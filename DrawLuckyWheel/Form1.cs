@@ -17,6 +17,7 @@ namespace DrawLuckyWheel
         float wheelTimes;
         Timer wheelTimer;
         LuckyCirlce koloFortuny;
+        List<string> history;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace DrawLuckyWheel
             wheelTimer.Interval = 30; // speed 
             wheelTimer.Tick += wheelTimer_Tick;
             koloFortuny = new LuckyCirlce();
-
+            history = new List<string>();
         }
         public class LuckyCirlce
         {
@@ -80,6 +81,13 @@ namespace DrawLuckyWheel
         }
         private void wheelTimer_Tick(object sender, EventArgs e)
         {
+            if(wheelTimes == 0 )
+            {
+                wheelTimer.Stop();
+                history.Add(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));
+                Form2 form2 = new Form2(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));  
+                form2.ShowDialog(); 
+            }
 
             if (wheelIsMoved && wheelTimes > 0)
             {
@@ -104,10 +112,20 @@ namespace DrawLuckyWheel
 
 
         }
+    
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            wheelIsMoved = true;
+            Random rand = new Random();
+            wheelTimes = rand.Next(150, 200);    
 
+            wheelTimer.Start();
+        }
 
-
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(this.history);
+            form3.ShowDialog();
+        }
     }
 }
