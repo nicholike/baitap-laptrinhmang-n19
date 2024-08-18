@@ -115,7 +115,7 @@
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "[C#] Lucky Game - https://laptrinhvb.net";
+            //this.Text = "[C#] Lucky Game - https://laptrinhvb.net";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
