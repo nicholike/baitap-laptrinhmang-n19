@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,8 @@ namespace DrawLuckyWheel
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             wheelTimer = new Timer();
             wheelTimer.Interval = 30; // speed 
             wheelTimer.Tick += wheelTimer_Tick;
@@ -85,8 +88,12 @@ namespace DrawLuckyWheel
             {
                 wheelTimer.Stop();
                 history.Add(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));
-                Form2 form2 = new Form2(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));  
-                form2.ShowDialog(); 
+                
+
+                Form2 tempForm = new Form2(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));
+                this.AddOwnedForm(tempForm);
+                tempForm.Show();
+
             }
 
             if (wheelIsMoved && wheelTimes > 0)
@@ -126,6 +133,11 @@ namespace DrawLuckyWheel
         {
             Form3 form3 = new Form3(this.history);
             form3.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
