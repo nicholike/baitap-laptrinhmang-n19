@@ -104,16 +104,3 @@ namespace DrawLuckyWheel
 
 
         }
-
-        private void btnPlay_Click(object sender, EventArgs e)
-        {
-            wheelIsMoved = true;
-            Random rand = new Random();
-            wheelTimes = rand.Next(150, 200);    //random số vòng quay     
-
-            wheelTimer.Start();
-        }
-
-
-    }
-}
