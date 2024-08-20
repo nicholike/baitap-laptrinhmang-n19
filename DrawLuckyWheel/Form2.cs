@@ -34,7 +34,9 @@ namespace DrawLuckyWheel
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        { 
+        {
+            SoundPlayer ss = new SoundPlayer("audio2.wav");
+            ss.Play();
         }
     }
 }

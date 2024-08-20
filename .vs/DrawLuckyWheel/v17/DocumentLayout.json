@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|d:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|solutionrelative:drawluckywheel\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|solutionrelative:drawluckywheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|d:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|solutionrelative:drawluckywheel\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|solutionrelative:drawluckywheel\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|d:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\drawluckywheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D54B1CE0-BBFB-4C5E-9058-3F3CB0EC57C9}|DrawLuckyWheel\\DrawLuckyWheel.csproj|solutionrelative:drawluckywheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\DrawLuckyWheel\\Form2.cs",
               "RelativeDocumentMoniker": "DrawLuckyWheel\\Form2.cs",
               "ToolTip": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\DrawLuckyWheel\\Form2.cs",
               "RelativeToolTip": "DrawLuckyWheel\\Form2.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCUAAAAIAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwCYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T10:02:01.19Z",
               "EditorCaption": ""
@@ -66,8 +66,7 @@
               "ToolTip": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\DrawLuckyWheel\\Form3.cs [Design]",
               "RelativeToolTip": "DrawLuckyWheel\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:03:15.647Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-20T06:03:15.647Z"
             },
             {
               "$type": "Document",
@@ -78,12 +77,11 @@
               "ToolTip": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\DrawLuckyWheel\\Form2.cs [Design]",
               "RelativeToolTip": "DrawLuckyWheel\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:03:12.166Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-20T06:03:12.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\b\u00E0i t\u1EADp(new)\\baitap-laptrinhmang-n19\\DrawLuckyWheel\\Form1.cs",
               "RelativeDocumentMoniker": "DrawLuckyWheel\\Form1.cs",
