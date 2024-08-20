@@ -40,8 +40,9 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 42);
+            this.label2.Size = new System.Drawing.Size(0, 53);
             this.label2.TabIndex = 4;
             // 
             // label1
@@ -54,9 +55,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(258, 277);
+            this.label1.Location = new System.Drawing.Point(344, 341);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 47);
+            this.label1.Size = new System.Drawing.Size(89, 58);
             this.label1.TabIndex = 5;
             this.label1.Text = "00";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -67,9 +69,10 @@
             this.btnPlay.AutoEllipsis = true;
             this.btnPlay.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnPlay.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnPlay.Location = new System.Drawing.Point(199, 404);
+            this.btnPlay.Location = new System.Drawing.Point(265, 497);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(165, 45);
+            this.btnPlay.Size = new System.Drawing.Size(220, 55);
             this.btnPlay.TabIndex = 6;
             this.btnPlay.Text = "DONE";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -77,17 +80,19 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DrawLuckyWheel.Properties.Resources.Thiết_kế_chưa_có_tên;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(779, 690);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.HelpButton = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace DrawLuckyWheel
 {
@@ -127,6 +128,8 @@ namespace DrawLuckyWheel
             wheelTimes = rand.Next(150, 200);    
 
             wheelTimer.Start();
+            SoundPlayer ss = new SoundPlayer("audio1.wav");
+            ss.Play();
         }
 
         private void button1_Click(object sender, EventArgs e)

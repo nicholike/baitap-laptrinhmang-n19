@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Media;
 
 namespace DrawLuckyWheel
 {
@@ -30,6 +31,10 @@ namespace DrawLuckyWheel
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        { 
         }
     }
 }

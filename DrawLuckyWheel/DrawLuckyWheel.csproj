@@ -137,5 +137,11 @@
   <ItemGroup>
     <None Include="Resources\thống kê trúng thưởng.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio2.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
