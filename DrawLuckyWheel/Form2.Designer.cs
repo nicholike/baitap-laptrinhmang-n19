@@ -51,11 +51,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoEllipsis = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(119, 92);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(258, 277);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 81);
+            this.label1.Size = new System.Drawing.Size(67, 47);
             this.label1.TabIndex = 5;
             this.label1.Text = "00";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -65,10 +66,10 @@
             this.btnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPlay.AutoEllipsis = true;
             this.btnPlay.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnPlay.ForeColor = System.Drawing.Color.Green;
-            this.btnPlay.Location = new System.Drawing.Point(134, 186);
+            this.btnPlay.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnPlay.Location = new System.Drawing.Point(199, 404);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(80, 45);
+            this.btnPlay.Size = new System.Drawing.Size(165, 45);
             this.btnPlay.TabIndex = 6;
             this.btnPlay.Text = "DONE";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -78,7 +79,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 265);
+            this.BackgroundImage = global::DrawLuckyWheel.Properties.Resources.Thiết_kế_chưa_có_tên;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);

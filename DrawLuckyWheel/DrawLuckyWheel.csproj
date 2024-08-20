@@ -116,5 +116,26 @@
   <ItemGroup>
     <None Include="Resources\allresult.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-le-chuong-trinh-vong-quay-may-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start-button-clipart-images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thống kê trúng thưởng.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
