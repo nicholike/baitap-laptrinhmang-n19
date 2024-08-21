@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace DrawLuckyWheel
 {
@@ -20,6 +22,9 @@ namespace DrawLuckyWheel
         Timer wheelTimer;
         LuckyCirlce koloFortuny;
         List<string> history;
+        private readonly HttpClient _httpClient;
+        private List<CodeData> codes;
+
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +35,7 @@ namespace DrawLuckyWheel
             wheelTimer.Tick += wheelTimer_Tick;
             koloFortuny = new LuckyCirlce();
             history = new List<string>();
+            _httpClient = new HttpClient();
         }
         public class LuckyCirlce
         {
@@ -47,6 +53,31 @@ namespace DrawLuckyWheel
                 kat = 0.0f;
             }
 
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            string url = "https://localhost:7284/api/code";
+
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+
+                string responseData = await response.Content.ReadAsStringAsync();
+
+                List<CodeData> items = JsonConvert.DeserializeObject<List<CodeData>>(responseData);
+
+                this.codes = items;
+            }
+            catch (HttpRequestException httpEx)
+            {
+                MessageBox.Show($"Request error: {httpEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unexpected error: {ex.Message}");
+            }
         }
 
         public static Bitmap RotateImage(Image image, float angle)
@@ -83,13 +114,42 @@ namespace DrawLuckyWheel
                 oldImage.Dispose();
             }
         }
-        private void wheelTimer_Tick(object sender, EventArgs e)
+        private async void wheelTimer_Tick(object sender, EventArgs e)
         {
             if(wheelTimes == 0 )
             {
                 wheelTimer.Stop();
                 history.Add(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));
-                
+
+                string url = "https://localhost:7284/api/info";
+
+                try
+                {
+                    var postData = new
+                    {
+                        Code = int.Parse(textBox1.Text),
+                        Name = textBox2.Text,
+                        PhoneNumber = textBox3.Text,
+                        Prize = Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan])
+                    };
+
+                    string json = JsonConvert.SerializeObject(postData);
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = await _httpClient.PostAsync(url, content);
+                    response.EnsureSuccessStatusCode();
+
+                }
+                catch (HttpRequestException httpEx)
+                {
+                    MessageBox.Show($"Request error: {httpEx.Message}");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Unexpected error: {ex.Message}");
+                }
+
+
 
                 Form2 tempForm = new Form2(Convert.ToString(koloFortuny.wartosciStanu[koloFortuny.stan]));
                 this.AddOwnedForm(tempForm);
@@ -123,6 +183,31 @@ namespace DrawLuckyWheel
     
         private void btnPlay_Click(object sender, EventArgs e)
         {
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập mã");
+                return;
+            }
+
+            if (codes.Where(value => value.Code == int.Parse(textBox1.Text)).ToList().Count <= 0)
+            {
+                MessageBox.Show("Mã không đúng");
+                return;
+            }
+
+            if (textBox2.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên");
+                return;
+            }
+
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập SĐT");
+                return;
+            }
+
             wheelIsMoved = true;
             Random rand = new Random();
             wheelTimes = rand.Next(150, 200);    
@@ -139,6 +224,26 @@ namespace DrawLuckyWheel
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

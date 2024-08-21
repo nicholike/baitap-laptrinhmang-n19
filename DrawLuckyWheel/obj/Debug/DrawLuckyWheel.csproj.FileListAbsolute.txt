@@ -65,3 +65,18 @@ D:\bài tập(new)\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWhe
 D:\bài tập(new)\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CoreCompileInputs.cache
 D:\bài tập(new)\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.exe
 D:\bài tập(new)\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.exe.config
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.exe
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.AssemblyReference.cache
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form1.resources
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form2.resources
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Form3.resources
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.Properties.Resources.resources
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.GenerateResource.cache
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CoreCompileInputs.cache
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.exe
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.pdb
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.xml
+C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CopyComplete
