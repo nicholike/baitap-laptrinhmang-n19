@@ -80,3 +80,6 @@ C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWhe
 C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.dll
 C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.xml
 C:\Users\quan\Desktop\New folder\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CopyComplete
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\bin\Debug\Newtonsoft.Json.xml
+C:\Users\quan\Desktop\New folder\baitap-laptrinhmang-n19\DrawLuckyWheel\obj\Debug\DrawLuckyWheel.csproj.CopyComplete

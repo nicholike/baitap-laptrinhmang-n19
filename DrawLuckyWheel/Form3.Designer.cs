@@ -37,6 +37,7 @@ namespace DrawLuckyWheel
             // 
             this.listView1.BackColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
+            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(133, 160);
             this.listView1.Name = "listView1";
@@ -53,7 +54,7 @@ namespace DrawLuckyWheel
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(551, 542);
             this.Controls.Add(this.listView1);
-            this.Name = "Lịch sử trúng thưởng";
+            this.Name = "Form3";
             this.Text = "Lịch sử trúng thưởng";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
